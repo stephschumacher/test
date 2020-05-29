@@ -1,0 +1,40 @@
+{
+  "startTime": "2020-05-11T15:05:06.260Z",
+  "endTime": "2020-05-11T15:05:12.560Z",
+  "userAgents": [
+    "Chrome 81.0.4044.138 / macOS 10.15.4",
+    "Safari 13.1 / macOS 10.15.4"
+  ],
+  "passed": 1,
+  "total": 2,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "Fulford cycles",
+      "path": "/Users/ssr30/Documents/Coding/TestCafe/testcafe.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "store is present",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3951,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "it contains the text store",
+          "meta": {},
+          "errs": [
+            "TypeError: text.eql is not a function\n\nBrowser: Chrome 81.0.4044.138 / macOS 10.15.4\n\n   38 |});\n   39 |\n   40 |test('it contains the text store', async t => {\n   41 |    const text = Selector('#comp-j7g5cas4label');\n   42 |    await t\n > 43 |        .expect(text.eql('STORE'));\n   44 |\n   45 |});\n\n   at <anonymous> (/Users/ssr30/Documents/Coding/TestCafe/testcafe.js:43:22)\n   at <anonymous> (/Users/ssr30/Documents/Coding/TestCafe/testcafe.js:40:1)\n   at $$testcafe_test_run$$Hz2hEHCjc$$ (/Users/ssr30/Documents/Coding/TestCafe/node_modules/testcafe/src/api/test-run-tracker.js:76:16)\n   at <anonymous> (/Users/ssr30/Documents/Coding/TestCafe/node_modules/testcafe/src/api/wrap-test-function.js:17:28)",
+            "TypeError: text.eql is not a function\n\nBrowser: Safari 13.1 / macOS 10.15.4\n\n   38 |});\n   39 |\n   40 |test('it contains the text store', async t => {\n   41 |    const text = Selector('#comp-j7g5cas4label');\n   42 |    await t\n > 43 |        .expect(text.eql('STORE'));\n   44 |\n   45 |});\n\n   at <anonymous> (/Users/ssr30/Documents/Coding/TestCafe/testcafe.js:43:22)\n   at <anonymous> (/Users/ssr30/Documents/Coding/TestCafe/testcafe.js:40:1)\n   at $$testcafe_test_run$$WDvxtgsbz$$ (/Users/ssr30/Documents/Coding/TestCafe/node_modules/testcafe/src/api/test-run-tracker.js:76:16)\n   at <anonymous> (/Users/ssr30/Documents/Coding/TestCafe/node_modules/testcafe/src/api/wrap-test-function.js:17:28)"
+          ],
+          "durationMs": 4089,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}
