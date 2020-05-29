@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                cd TestCafe
-                npm run test
+                sh cd TestCafe
+                sh npm run test
             }
         }
         stage('Test') {
