@@ -1,8 +1,9 @@
-
 {
-    "scripts": {
-      "test": "testcafe chrome test/ --selector-timeout=1000",
-      "headless": "testcafe chrome:headless test/" 
-    }
+  "scripts": {
+    "test": "testcafe chrome test/",
+    "headless": "testcafe chrome:headless test/"
+  },
+  "devDependencies": {
+    "testcafe": "^1.8.5"
+  }
 }
-  
